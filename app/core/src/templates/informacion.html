@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+    {% load static %}
+    <!--================ Hero sm Banner start =================-->      
+  <section class="hero-banner hero-banner--sm mb-30px">
+    <div class="container">
+      <div class="hero-banner--sm__content">
+        <h1>Informacion</h1>
+        <nav aria-label="breadcrumb" class="banner-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Informacion</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!--================ Hero sm Banner end =================-->
+
+ <!--================Blog Categorie Area =================-->
+  <section class="blog_categorie_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="categories_post">
+                <img class="card-img rounded-0" src="{% static 'assets/img/blog/cat-post/color-gris-1.png' %}" alt="post">
+                <div class="categories_details">
+                    <div class="categories_text">
+                        <a href="single-blog.html">
+                            <h5>{{movimientos}}</h5>
+                        </a>
+                        <div class="border_line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="categories_post">
+            <img class="card-img rounded-0" src="{% static 'assets/img/blog/cat-post/color-gris-1.png' %}" alt="post">
+            <div class="categories_details">
+              <div class="categories_text">
+                <a href="single-blog.html">
+                    <h5>{{usuarios}}</h5>
+                </a>
+                <div class="border_line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="categories_post">
+                <img class="card-img rounded-0" src="{% static 'assets/img/blog/cat-post/color-gris-1.png' %}" alt="post">
+                <div class="categories_details">
+                    <div class="categories_text">
+                        <a href="single-blog.html">
+                            <h5>{{pagos}}</h5>
+                        </a>
+                        <div class="border_line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================Blog Categorie Area =================-->
+
+  <!--================Blog Area =================-->
+  <section class="blog_area">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8">
+                  <div class="blog_left_sidebar">
+                      <article class="row blog_item">
+                          <div class="col-md-3">
+                              <div class="blog_info text-right">
+                              </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="blog_post">
+                                  <img src="{% static 'assets/img/blog/main-blog/m-blog-1.png' %}" alt="">
+                                  <div class="blog_details">
+                                      <a href="single-blog.html">
+                                          <h2>{{menuP}}</h2>
+                                      </a>
+                                      <p>{{descripcion_menuP}}</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </article>
+                      <article class="row blog_item">
+                          <div class="col-md-3">
+                              <div class="blog_info text-right">
+                              </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="blog_post">
+                                  <img src="{% static 'assets/img/blog/main-blog/m-blog-3.png' %}" alt="">
+                                  <div class="blog_details">
+                                      <a href="single-blog.html">
+                                          <h2>{{registroM}}</h2>
+                                      </a>
+                                      <p>{{descripcion_registriM}}</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </article>
+                      <article class="row blog_item">
+                          <div class="col-md-3">
+                              <div class="blog_info text-right">
+                              </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="blog_post">
+                                  <img src="{% static 'assets/img/blog/main-blog/m-blog-2.png' %}" alt="">
+                                  <div class="blog_details">
+                                      <a href="single-blog.html">
+                                          <h2>{{visualizarM}}</h2>
+                                      </a>
+                                      <p>{{descripcion_visualizaM}}</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </article>
+                      <article class="row blog_item">
+                          <div class="col-md-3">
+                              <div class="blog_info text-right">
+                              </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="blog_post">
+                                  <img src="{% static 'assets/img/blog/main-blog/m-blog-4.png' %}" alt="">
+                                  <div class="blog_details">
+                                      <a href="single-blog.html">
+                                          <h2>{{registroPT}}</h2>
+                                      </a>
+                                      <p>{{descripcion_registroPT}}</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </article>
+                      <article class="row blog_item">
+                          <div class="col-md-3">
+                              <div class="blog_info text-right">
+                              </div>
+                          </div>
+                          <div class="col-md-9">
+                              <div class="blog_post">
+                                  <img src="{% static 'assets/img/blog/main-blog/m-blog-5.png' %}" alt="">
+                                  <div class="blog_details">
+                                      <a href="single-blog.html">
+                                          <h2>{{listaPT}}</h2>
+                                      </a>
+                                      <p>{{descripcion_listaPT}}</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </article>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--================Blog Area =================-->
+
+
+{% endblock %}
